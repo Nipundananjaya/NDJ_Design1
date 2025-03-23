@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="qr.css">
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">NDJ <span class="highlight">DESIGN</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT ME</a></li>
+                <li><a href="index.html#services">SERVICES</a></li>
+                <li><a href="index.html#tools">NDJ TOOLS</a></li>
+                <li><a href="index.html#achievements">ACHIEVEMENTS</a></li>
+                <li><a href="index.html#projects">PROJECTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>NDJ QR Code Generator</h1>
+        <p class="description">Generate QR codes for text or URLs</p>
+        
+        <div class="input-section">
+            <input type="text" id="text-input" placeholder="Enter text or URL">
+            
+            <div class="options-section">
+                <div class="option-group">
+                    <label>QR Code Size:</label>
+                    <select id="size-select">
+                        <option value="128">Small</option>
+                        <option value="200" selected>Medium</option>
+                        <option value="256">Large</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button id="generate-button">Generate QR Code</button>
+        </div>
+        
+        <div class="output-section">
+            <div id="qrcode"></div>
+            <button id="download-button" style="display:none;">Download QR Code</button>
+        </div>
+    </div>
+    
+    <script src="qr.js"></script>
+</body>
+</html>

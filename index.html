@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDJ Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">NDJ <span class="highlight">DESIGN</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#tools">NDJ TOOLS</a></li>
+                <li><a href="#achievements">ACHIEVEMENTS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to NDJ <span class="highlight">DESIGN</span></h1>
+            <h2>Design that defines you</h2>
+            <p>Creating visually stunning and user-friendly experiences that elevate your brand</p>
+            <button onclick="scrollToContact()" class="cta-button">Contact me </button>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="about.png" alt="My Photo">
+                </div>
+                <div class="about-text">
+                    <h2>About <span class="highlight">Me</span></h2>
+                    <p>I am a <strong>Web Designer, Graphic Designer, and UI/UX Designer</strong> passionate about creating visually stunning and user-friendly designs. With years of experience in the industry, I bring creativity and technical expertise to every project.</p>
+                    <p>My goal is to help businesses establish a strong online presence through thoughtful design that resonates with their target audience.</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Services</span></h2>
+            <div class="service-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Eye-catching visuals that communicate your brand's message effectively.</p>
+                    <a href="#" class="card-link">More...</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Modern, responsive websites that provide an excellent user experience.</p>
+                    <a href="#" class="card-link">More...</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                    <h3>CV Design</h3>
+                    <p>Creating intuitive interfaces for easy and enjoyable digital experiences.</p>
+                    <a href="#" class="card-link">More...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tools">
+        <div class="container">
+            <h2 class="section-title">NDJ <span class="highlight">Tools</span></h2>
+            <p class="section-description">Custom tools designed to enhance your workflow</p>
+            <div class="tool-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3>Password Generator </h3>
+                    <p>Create harmonious color schemes for your projects.</p>
+                    <a href="password.html" target="_blank" class="card-link">Try it</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h3>PDF To JPG Converter</h3>
+                    <p>Quickly resize images for various platforms.</p>
+                    <a href="pdf.html" target="_blank" class="card-link">Try it</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-qrcode"></i>
+                    </div>
+                    <h3>QR Code Generator</h3>
+                    <p>Find the perfect font combinations for your designs.</p>
+                    <a href="qrcode.html" target="_blank" class="card-link">Try it</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="achievements" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Achievements</span></h2>
+            <div class="stats">
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span id="customers" class="stat-number">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-project-diagram"></i>
+                    <span id="projects" class="stat-number">0</span>
+                    <span class="stat-label">Completed Projects</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-tools"></i>
+                    <span id="tools-created" class="stat-number">0</span>
+                    <span class="stat-label">Tools Created</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Redesign</h3>
+                        <p>Complete overhaul of an online store with improved UI/UX.</p>
+                        <div class="project-tags">
+                            <span>Web Design</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Brand Identity</h3>
+                        <p>Brand identity design for a tech startup.</p>
+                        <div class="project-tags">
+                            <span>Graphic Design</span>
+                            <span>Branding</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App Design</h3>
+                        <p>User interface design for a fitness tracking app.</p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>Mobile</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="bg-dark">
+        <div class="container">
+            <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Arama Road,Amunugama,Nikadalupotha</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ndjdesign.m@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+94 723560843</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1EDn3i8Qg8/?mibextid=qi2Omg" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">NDJ <span class="highlight">DESIGN</span></div>
+                    <p>Creating visually stunning and user-friendly experiences that elevate your brand.</p>
+                    <div class="social-links footer-social">
+                        <a href="https://www.facebook.com/share/1EDn3i8Qg8/?mibextid=qi2Omg" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#tools">NDJ Tools</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="services-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">CV Design</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Brand Identity</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info-footer">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Arama Road, Amunugama, Nikadalupotha</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ndjdesign.m@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+94 723560843</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NDJ Design. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

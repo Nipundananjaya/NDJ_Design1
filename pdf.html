@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to JPG Converter</title>
+    <link rel="stylesheet" href="stylepdf.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">NDJ <span class="highlight">DESIGN</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT ME</a></li>
+                <li><a href="index.html#services">SERVICES</a></li>
+                <li><a href="index.html#tools">NDJ TOOLS</a></li>
+                <li><a href="index.html#achievements">ACHIEVEMENTS</a></li>
+                <li><a href="index.html#projects">PROJECTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <header>
+            <h1>NDJ PDF to JPG Converter</h1>
+            <p>Convert your PDF documents to high-quality JPG images</p>
+        </header>
+        
+        <div class="upload-area" id="dropZone">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234a90e2' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' /%3E%3C/svg%3E" alt="Upload icon" class="upload-icon">
+            <h3>Drag & Drop your PDF file here</h3>
+            <p>or</p>
+            <label for="pdfInput" class="file-input-label">Choose a file</label>
+            <input type="file" id="pdfInput" accept="application/pdf" class="file-input">
+            <p class="file-info" id="fileInfo">No file selected</p>
+        </div>
+        
+        <div class="options">
+            <div class="option-group">
+                <label for="imageQuality">Image Quality:</label>
+                <select id="imageQuality">
+                    <option value="0.7">Medium (Recommended)</option>
+                    <option value="0.9">High</option>
+                    <option value="0.5">Low</option>
+                </select>
+            </div>
+            
+            <div class="option-group">
+                <label for="imageScale">Scale:</label>
+                <select id="imageScale">
+                    <option value="2">2x (Recommended)</option>
+                    <option value="1">1x</option>
+                    <option value="3">3x</option>
+                </select>
+            </div>
+        </div>
+        
+        <button id="convertBtn" class="convert-btn" disabled>Convert PDF to JPG</button>
+        
+        <div id="progress-container" class="progress-container hidden">
+            <div class="progress-text">Converting... <span id="progress-status">0%</span></div>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <div id="preview" class="preview hidden">
+            <h3>Preview:</h3>
+            <div id="preview-container" class="preview-container"></div>
+            <button id="downloadBtn" class="download-btn">Download All Images as ZIP</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>PDF to JPG Converter | Process files securely in your browser</p>
+    </footer>
+    
+    <script src="pdf.js"></script>
+</body>
+</html>
